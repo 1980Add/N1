@@ -1,7 +1,6 @@
 #!/bin/bash
 
 Diy_n1() {
-cd ../
 KERNEL_VERSION="5.4.101-flippy-54+o"
 VERSION="5.4.101"
 mkdir opt
@@ -15,7 +14,7 @@ cd imgs
 pathimg=$PWD
 wget https://github.com/haohaoget/N1/releases/download/${VERSION}/Armbian_20.10_Aml-s9xxx_buster_${KERNEL_VERSION}.img.xz
 unxz Armbian_20.10_Aml-s9xxx_buster_${KERNEL_VERSION}.img.xz
-cd ..
+cd ../
 cd openwrt
 sed -i 's//opt/imgs/${pathimg}/g' mk_s905d_n1.sh
 chmod +x mk_s905d_n1.sh
