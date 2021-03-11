@@ -22,5 +22,5 @@ chmod +x mk_s905d_n1.sh
 sudo ./mk_s905d_n1.sh
 sleep 20
 sudo chmod  -R 777 tmp
-
+ls
 }
