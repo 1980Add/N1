@@ -9,7 +9,6 @@ tar -xzvf mk_openwrt_src_20210304.tar.gz -C /opt
 cp openwrt/bin/targets/armvirt/*/*.tar.gz opt/openwrt    
 cd opt
 mkdir imgs
-sudo chmod  -R 777 /imgs
 cd imgs
 pathimg=$PWD
 wget https://github.com/haohaoget/N1/releases/download/${VERSION}/Armbian_20.10_Aml-s9xxx_buster_${KERNEL_VERSION}.img.xz
