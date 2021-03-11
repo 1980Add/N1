@@ -10,11 +10,14 @@ cp openwrt/bin/targets/armvirt/*/*.tar.gz opt/openwrt
 cd opt
 mkdir imgs
 chmod  -R 777 imgs
+ls
 cd imgs
 pathimg=$PWD
 wget https://github.com/haohaoget/N1/releases/download/${VERSION}/Armbian_20.10_Aml-s9xxx_buster_${KERNEL_VERSION}.img.xz
 unxz Armbian_20.10_Aml-s9xxx_buster_${KERNEL_VERSION}.img.xz
+ls
 cd ../
+ls
 cd openwrt
 sed -i 's//opt/imgs/${pathimg}/g' mk_s905d_n1.sh
 chmod +x mk_s905d_n1.sh
