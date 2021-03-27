@@ -1,11 +1,11 @@
 #!/bin/bash
 
 Diy_n1() {
-KERNEL_VERSION="5.4.105-flippy-55+o"
-VERSION="5.4.105"
+KERNEL_VERSION="5.4.108-flippy-56+o"
+VERSION="5.4.108"
 mkdir opt
 chmod  -R 777 opt
-tar -xzvf mk_openwrt_src_20210312.tar.gz -C opt
+tar -xzvf mk_openwrt_src_20210327.tar.gz -C opt
 cp openwrt/bin/targets/armvirt/*/*.tar.gz opt/openwrt    
 cd opt
 mkdir imgs
